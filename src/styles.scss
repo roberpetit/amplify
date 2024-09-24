@@ -7,7 +7,7 @@
 
 $theme: mat.define-theme((
   color: (
-    primary: mat.$violet-palette,
+    primary: mat.$green-palette,
   ),
   typography: (
     brand-family: 'Comic Sans',
@@ -22,5 +22,4 @@ $theme: mat.define-theme((
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-html {
-  }
+@include mat.color-variants-backwards-compatibility($theme);
